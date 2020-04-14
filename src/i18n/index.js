@@ -4,8 +4,8 @@ import initMessage from './lang/en-US';
 
 Vue.use(VueI18n);
 
-const savedLanguageKey = 'DEFAULT_LANGUAGE';
-const initLanguage = 'en-US';
+export const savedLanguageKey = 'DEFAULT_LANGUAGE';
+export const initLanguage = 'en-US';
 
 const dateTimeFormats = {
   'en-US': {
