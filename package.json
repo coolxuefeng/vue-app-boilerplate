@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "serve": "vue-cli-service serve:versioning",
+    "build": "vue-cli-service build:versioning",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
@@ -31,7 +31,13 @@
     "prettier": "^1.19.1",
     "sass": "^1.25.0",
     "sass-loader": "^8.0.2",
+    "simple-git": "^1.132.0",
     "vue-template-compiler": "^2.6.11"
+  },
+  "vuePlugins": {
+    "service": [
+      "build/build.versioning.js"
+    ]
   },
   "gitHooks": {
     "pre-commit": "lint-staged"
